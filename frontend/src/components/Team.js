@@ -19,7 +19,7 @@ function Team() {
     // Make a GET request to the /display-team route
     const fetchTeamMembers = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/team/display-team", {
+        const response = await fetch("https://vishwaracers-baja-backend.vercel.app/api/team/display-team", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -48,7 +48,7 @@ function Team() {
 
   const handleDelete = async (memberId) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/team/deletemember/${memberId}`, {
+      const response = await fetch(`https://vishwaracers-baja-backend.vercel.app/api/team/deletemember/${memberId}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

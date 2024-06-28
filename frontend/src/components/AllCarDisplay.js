@@ -8,7 +8,7 @@ function AllCarDisplay() {
     useEffect(()=>{
         const fetchAllCars= async () =>{ 
             try {
-                const response = await fetch("http://localhost:5000/api/rent/allcars", {
+                const response = await fetch("https://vishwaracers-baja-backend.vercel.app/api/rent/allcars", {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',

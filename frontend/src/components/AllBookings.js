@@ -9,7 +9,7 @@ const AllBookings = () => {
   useEffect(() => {
     const fetchAllBookings = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/Bookingsroute/allbookings", {
+        const response = await fetch("https://vishwaracers-baja-backend.vercel.app/api/Bookingsroute/allbookings", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

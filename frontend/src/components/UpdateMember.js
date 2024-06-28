@@ -45,7 +45,7 @@ const UpdateMember = ({ memberId, showModal, memberData, onClose }) => {
 
       console.log("formDataWithImage is over");
       const response = await fetch(
-        `http://localhost:5000/api/team/update-team/${memberId}`,
+        `https://vishwaracers-baja-backend.vercel.app/api/team/update-team/${memberId}`,
         {
           method: "PUT",
           headers: {

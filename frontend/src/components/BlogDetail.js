@@ -9,7 +9,7 @@ const BlogDetail = () => {
     useEffect(() => {
         const fetchBlog = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/api/blog/blogs/${id}`, {
+                const response = await fetch(`https://vishwaracers-baja-backend.vercel.app/api/blog/blogs/${id}`, {
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json",

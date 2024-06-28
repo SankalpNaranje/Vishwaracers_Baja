@@ -23,7 +23,7 @@ function Contact() {
     
     // e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/api/contact/createcontact", {
+      const response = await fetch("https://vishwaracers-baja-backend.vercel.app/api/contact/createcontact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

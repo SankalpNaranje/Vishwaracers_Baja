@@ -8,7 +8,7 @@ const AllBlog = () => {
     useEffect(() => {
         const fetchAllBlog = async () => {
             try {
-                const response = await fetch("http://localhost:5000/api/blog/allblog", {
+                const response = await fetch("https://vishwaracers-baja-backend.vercel.app/api/blog/allblog", {
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json",

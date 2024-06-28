@@ -30,7 +30,7 @@ const AddTeamMember = () => {
       formData.append("images", images[i]);
     }
 
-    const response = await fetch("http://localhost:5000/api/team/add-team", {
+    const response = await fetch("https://vishwaracers-baja-backend.vercel.app/api/team/add-team", {
       method: "POST",
       headers: {
         "auth-token": localStorage.getItem("token"),

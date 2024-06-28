@@ -13,7 +13,7 @@ const ResetPassword = (props) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch(`http://localhost:5000/api/auth/reset-password/${id}/${token}`, {
+        const response = await fetch(`https://vishwaracers-baja-backend.vercel.app/api/auth/reset-password/${id}/${token}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

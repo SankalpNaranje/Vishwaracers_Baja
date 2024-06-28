@@ -14,7 +14,7 @@ const Forgotpassword = (props) => {
 
         e.preventDefault();
         alert("Please check your email address to view the link.")
-        const response = await fetch("http://localhost:5000/api/auth/forgot-password", {
+        const response = await fetch("https://vishwaracers-baja-backend.vercel.app/api/auth/forgot-password", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

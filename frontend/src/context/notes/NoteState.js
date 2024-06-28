@@ -14,7 +14,7 @@ const NoteState = (props) => {
   // Get all Notes
   const getNotes = async () => {
     // API Call 
-    const response = await fetch(`http://localhost:5000/api/rent/fetchallcars`, {
+    const response = await fetch(`https://vishwaracers-baja-backend.vercel.app/api/rent/fetchallcars`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -28,7 +28,7 @@ const NoteState = (props) => {
 
   // Add a Note
   const addNote = async (name, description, cost , photo,Used_for ) => {
-    const response = await fetch(`http://localhost:5000/api/rent/addcar`, {
+    const response = await fetch(`https://vishwaracers-baja-backend.vercel.app/api/rent/addcar`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ const NoteState = (props) => {
 
   const forfarmers = async() =>{
     const token = localStorage.getItem('token');
-    const response = await fetch('http://localhost:5000/api/rent/cars/farmer', {
+    const response = await fetch('https://vishwaracers-baja-backend.vercel.app/api/rent/cars/farmer', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ const NoteState = (props) => {
 
   const fortourist = async() =>{
     const token = localStorage.getItem('token');
-    const response = await fetch('http://localhost:5000/api/rent/cars/tourist', {
+    const response = await fetch('https://vishwaracers-baja-backend.vercel.app/api/rent/cars/tourist', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -75,7 +75,7 @@ const NoteState = (props) => {
   // Delete a Note
   const deleteNote=async(id)=>{
     // //API CALLS - backend
-        const response = await fetch(`http://localhost:5000/api/rent/deletecar/${id}`, {
+        const response = await fetch(`https://vishwaracers-baja-backend.vercel.app/api/rent/deletecar/${id}`, {
             method: "DELETE", 
             headers: {
             "Content-Type": "application/json",
@@ -97,7 +97,7 @@ const NoteState = (props) => {
   // Edit a Note
   const editNote = async (id, name, description, cost, photo) => {
     // API Call 
-    const response = await fetch(`http://localhost:5000/api/rent/updatecar/${id}`, {
+    const response = await fetch(`https://vishwaracers-baja-backend.vercel.app/api/rent/updatecar/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -130,7 +130,7 @@ const NoteState = (props) => {
   const getallbookings = async () => {
     const token = localStorage.getItem('token');
   
-    const response = await fetch('http://localhost:5000/api/Bookingsroute/bookings', {
+    const response = await fetch('https://vishwaracers-baja-backend.vercel.app/api/Bookingsroute/bookings', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -148,7 +148,7 @@ const NoteState = (props) => {
   
 
   const getbookings = async(bookeduser,bookedusername,Used_for,car_id,mobileNumber ,color , chasis ,  carname ,carcost,carphoto) => {
-    const response = await fetch ('http://localhost:5000/api/Bookingsroute/bookcar', {
+    const response = await fetch ('https://vishwaracers-baja-backend.vercel.app/api/Bookingsroute/bookcar', {
         method : 'POST',
         headers : {
           'Content-Type': 'application/json',
