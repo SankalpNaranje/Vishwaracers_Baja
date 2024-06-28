@@ -11,7 +11,7 @@ app.use(cors({
   origin: 'https://vishwaracers-baja-frontend.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
-  allowedHeaders: ['Content-Type', 'Authorization']
+  allowedHeaders: ['Content-Type', 'Authorization', 'auth-token']
 }));
 
 // Middleware to parse JSON
