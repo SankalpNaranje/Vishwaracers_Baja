@@ -17,6 +17,11 @@ app.use(cors({
 
 
 app.use(express.json())
+
+app.get('/api', (req, res) => {
+  res.json("Hello");
+});
+
 app.use('/api/auth',require('./routes/auth'))
 
 app.use('/api/rent',require('./routes/rent'))
