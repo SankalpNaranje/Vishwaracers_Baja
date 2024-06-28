@@ -28,7 +28,7 @@ const Addcar = () => {
       }, // This is needed if you want to upload files with this request
       body: formData, 
     });
-    console.log("Sucesfully Added Data In Database")
+    // console.log("Sucesfully Added Data In Database")
     const json = await response.json();
     console.log(json);
     navigate('/home'); 
