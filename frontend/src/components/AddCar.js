@@ -25,7 +25,7 @@ const Addcar = () => {
       method : 'POST',
       headers: {
         "auth-token": localStorage.getItem("token"),
-        'Content-Type': 'application/json',
+        // 'Content-Type': 'application/json',
       }, // This is needed if you want to upload files with this request
       body: formData, 
     });
