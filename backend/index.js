@@ -10,7 +10,7 @@ const port = 5000
 
 
 app.use(cors({
-  origin: 'https://self-book-frontend.vercel.app',
+  origin: 'https://vishwaracers-baja-frontend.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
